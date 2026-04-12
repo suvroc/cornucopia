@@ -30,3 +30,5 @@ Agents must operate under the same change-management controls applied to human a
 
 1. Restrict agent tool access to the minimum set required for the task. Agents performing monitoring or reporting tasks should not have write access to configuration or permission systems.
 2. Require explicit human approval for any agent action that modifies security-relevant configuration, permissions, or infrastructure state.
+4. Implement Just-In-Time (JIT) permission elevation for production environments, granting only the minimum necessary permissions for the specific operation and automatically revoking them after task completion or timeout.
+5. Enforce Human-In-the-Loop (HIL) approval for all permission grants in production, ensuring an authorized administrator explicitly reviews and approves each privilege escalation before the agent can proceed.

@@ -28,5 +28,5 @@ Agents with access to multiple high-value systems must operate under strict agen
 
 1. Decompose high-impact operations into discrete, human-reviewable steps. Never allow a single agent decision to trigger bulk irreversible changes across systems.
 2. Wrap all destructive or state-modifying agent actions in reversible transactions or dry-run modes, and require explicit confirmation before committing changes.
-3. Apply separate, minimal credential sets for each integrated system — the agent's access to one system should not automatically grant it equivalent access to others.
+3. Use minimal, separate credentials for each system - access to one should not grant equivalent access to others, with limited duration and scope.
 4. Enforce immutable audit trails for all cross-system agent actions, and test disaster recovery procedures specifically for agent-induced mass-change scenarios.
